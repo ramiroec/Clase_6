@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantes y Funciones Matemáticas en JavaScript</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #215da3, #0b3783);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .math-constants, .math-functions {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        .math-constants p, .math-functions p {
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #d7ff61;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #ff3b2f;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Constantes y Funciones Matemáticas en JavaScript</h1>
+
+        <!-- Constantes Matemáticas -->
+        <div class="math-constants">
+            <h2>Constantes Matemáticas</h2>
+            <p><b>Math.E:</b> <span class="highlight" id="mathE"></span></p>
+            <p><b>Math.PI:</b> <span class="highlight" id="mathPI"></span></p>
+            <p><b>Math.SQRT2:</b> <span class="highlight" id="mathSQRT2"></span></p>
+            <p><b>Math.SQRT1_2:</b> <span class="highlight" id="mathSQRT1_2"></span></p>
+            <p><b>Math.LN2:</b> <span class="highlight" id="mathLN2"></span></p>
+            <p><b>Math.LN10:</b> <span class="highlight" id="mathLN10"></span></p>
+            <p><b>Math.LOG2E:</b> <span class="highlight" id="mathLOG2E"></span></p>
+            <p><b>Math.LOG10E:</b> <span class="highlight" id="mathLOG10E"></span></p>
+        </div>
+
+        <!-- Funciones Matemáticas -->
+        <div class="math-functions">
+            <h2>Función Math.round()</h2>
+            <p>Math.round(x) devuelve el valor de x redondeado al entero más cercano:</p>
+            <p><b>Math.round(4.5):</b> <span class="highlight" id="mathRound"></span></p>
+            <p>Si el decimal es 0.5 o mayor, se redondea hacia arriba; si es menor que 0.5, se redondea hacia abajo.</p>
+
+
+            <h2>Función Math.ceil()</h2>
+            <p>Math.ceil(x) devuelve el menor entero mayor o igual a x:</p>
+            <p><b>Math.ceil(4.1):</b> <span class="highlight">5</span></p>
+            <p>Siempre redondea hacia arriba, independientemente del valor decimal.</p>
+
+            <h2>Función Math.floor()</h2>
+            <p>Math.floor(x) devuelve el mayor entero menor o igual a x:</p>
+            <p><b>Math.floor(4.9):</b> <span class="highlight">4</span></p>
+            <p>Siempre redondea hacia abajo, independientemente del valor decimal.</p>
+
+        </div>
+    </div>
+
+    <script>
+        // Mostrar constantes matemáticas
+        document.getElementById("mathE").textContent = Math.E;
+        document.getElementById("mathPI").textContent = Math.PI;
+        document.getElementById("mathSQRT2").textContent = Math.SQRT2;
+        document.getElementById("mathSQRT1_2").textContent = Math.SQRT1_2;
+        document.getElementById("mathLN2").textContent = Math.LN2;
+        document.getElementById("mathLN10").textContent = Math.LN10;
+        document.getElementById("mathLOG2E").textContent = Math.LOG2E;
+        document.getElementById("mathLOG10E").textContent = Math.LOG10E;
+
+        // Mostrar resultado de Math.round()
+        document.getElementById("mathRound").textContent = Math.round(4.5);
+    </script>
+</body>
+</html>
